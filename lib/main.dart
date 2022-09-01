@@ -31,12 +31,14 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'News App',
-      initialRoute: '/home',
+      initialRoute:'/loading',
       theme: theme,
       routes: {
         '/home': (_) => const HomeScreen(),
         '/tab1': (_) => const Tab1Screen(),
         '/tab2': (_) => const Tab2Screen(),
+        '/news': (_) => const NewsScreen(),
+        '/loading': (_) => const LoadingScreen(),
       },
     );
   }

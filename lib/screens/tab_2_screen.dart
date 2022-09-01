@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Tab2Screen extends StatelessWidget{
+class Tab2Screen extends StatefulWidget{
   const Tab2Screen({Key? key}) : super(key: key);
 
+  @override
+  State<Tab2Screen> createState() => _Tab2ScreenState();
+}
+
+class _Tab2ScreenState extends State<Tab2Screen> with AutomaticKeepAliveClientMixin{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,4 +16,8 @@ class Tab2Screen extends StatelessWidget{
       ),
     );
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 }
