@@ -1,4 +1,4 @@
-# news_app
+# News App
 
 This is a flutter project, the app shows a full understanding of the Provider State Manager and the use of a News API. This News App will show you the top headlines of the day, as well as a category section where the user can choose what to read.
 
