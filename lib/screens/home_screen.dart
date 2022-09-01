@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/screens/screens.dart';
 import 'package:provider/provider.dart';
 
 import '../services/news_service.dart';
@@ -10,9 +11,6 @@ class HomeScreen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-
-    final newsService = Provider.of<NewsService>(context);
-
     return ChangeNotifierProvider(
       create: (_) => _NavigationProvider(),
       child: Scaffold(
@@ -43,14 +41,16 @@ class _BottomNavigation extends StatelessWidget {
 
       },
       items: [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.person_outline, color: Colors.red,),
-          label: 'For You',
-        ),
+
         BottomNavigationBarItem(
           icon: Icon(Icons.public, color: Colors.red,),
           label: 'Headlines',
         ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.person_outline, color: Colors.red,),
+          label: 'For You',
+        ),
+
       ],
     );
   }
@@ -68,9 +68,7 @@ class _Pages extends StatelessWidget {
       controller: navigationProvider.pageController,
       physics: const NeverScrollableScrollPhysics(),
       children: [
-        Container(
-          color: Colors.red,
-        ),
+        Tab1Screen(),
         Container(
           color: Colors.blue,
         ),
