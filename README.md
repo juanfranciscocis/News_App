@@ -1,16 +1,30 @@
 # news_app
 
-A new Flutter project.
+This is a flutter project, the app shows a full understanding of the Provider State Manager and the use of a News API. This News App will show you the top headlines of the day, as well as a category section where the user can choose what to read.
 
-## Getting Started
+## How To Open The Project?
+1. Download and open all of the project file using a flutter compatible IDE.
+2. I recomend IntelliJ IDEA
+3. Get a News API key from the official website. https://newsapi.org/
+4. Set up your apy key in the lib/services/news_service.dart file
+3. Run the app using the iOS emulator or android emulator.
 
-This project is a starting point for a Flutter application.
+## I'm looking your CV (Curriculum Vitae), where can I find useful info about this project?
+You can take a look at some images here:
 
-A few resources to get you started if this is your first Flutter project:
+#### iOS app Dark Theme
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<p float="left">
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/1.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/2.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/3.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/4.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/5.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/6.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/7.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/8.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/9.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/10.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/11.PNG"width="300"/>
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
