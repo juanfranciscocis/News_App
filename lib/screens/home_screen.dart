@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../services/news_service.dart';
+
 class HomeScreen extends StatelessWidget{
 
 
@@ -8,6 +10,9 @@ class HomeScreen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
+
+    final newsService = Provider.of<NewsService>(context);
+
     return ChangeNotifierProvider(
       create: (_) => _NavigationProvider(),
       child: Scaffold(
@@ -29,6 +34,8 @@ class _BottomNavigation extends StatelessWidget {
     final navigationProvider = Provider.of<_NavigationProvider>(context);
 
     return BottomNavigationBar(
+      selectedItemColor: Colors.grey[300],
+      unselectedItemColor: Colors.grey,
       currentIndex: navigationProvider._currentPage,
       onTap: (index){
         //print(index);
@@ -37,11 +44,11 @@ class _BottomNavigation extends StatelessWidget {
       },
       items: [
         BottomNavigationBarItem(
-          icon: Icon(Icons.person_outline),
+          icon: Icon(Icons.person_outline, color: Colors.red,),
           label: 'For You',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.public),
+          icon: Icon(Icons.public, color: Colors.red,),
           label: 'Headlines',
         ),
       ],
