@@ -14,8 +14,6 @@ class HeadlinesShowWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      //if scroll is max, then load more news using pagination
-
       physics: const BouncingScrollPhysics(),
       itemCount: news.length,
       itemBuilder: (BuildContext context, int index) {

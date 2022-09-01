@@ -8,7 +8,9 @@ import 'package:http/http.dart' as http;
 
 class NewsService extends ChangeNotifier{
 
+  //PROPERTIES
   List<Article> headlines = [];
+  List<Article> byCategory = [];
   final String _URL_NEWS = 'https://newsapi.org/v2';
   final String _APIKEY = '3d6a6a6e2d614abeba7bc3dd4a6a07b8';
   bool isLoading = false;
@@ -23,9 +25,18 @@ class NewsService extends ChangeNotifier{
     CategoryModel(FontAwesomeIcons.memory, 'technology'),
   ];
 
-  NewsService(){
+  String? categoryElection;
+
+  //CONSTRUCTOR
+  NewsService({this.categoryElection}){
     this.getTopHeadlines();
   }
+
+
+
+  //METHODS
+
+
 
   getTopHeadlines() async{
     isLoading = true;
@@ -36,6 +47,17 @@ class NewsService extends ChangeNotifier{
     isLoading = false;
     notifyListeners();
 
+  }
+
+  getNewsByCategory(String category) async{
+    isLoading = true;
+    final url = Uri.parse('$_URL_NEWS/top-headlines?country=us&category=$category&pageSize=99&apiKey=$_APIKEY');
+    final response = await http.get(url);
+    final newsResponse = NewsResponse.fromJson(response.body);
+    this.byCategory.addAll(newsResponse.articles!);
+    print(byCategory.length);
+    isLoading = false;
+    notifyListeners();
   }
 
 
