@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -25,7 +27,7 @@ class NewsService extends ChangeNotifier{
     CategoryModel(FontAwesomeIcons.memory, 'technology'),
   ];
 
-  String? categoryElection;
+  String? categoryElection= 'science';
 
   //CONSTRUCTOR
   NewsService({this.categoryElection}){
@@ -54,10 +56,13 @@ class NewsService extends ChangeNotifier{
     final url = Uri.parse('$_URL_NEWS/top-headlines?country=us&category=$category&pageSize=99&apiKey=$_APIKEY');
     final response = await http.get(url);
     final newsResponse = NewsResponse.fromJson(response.body);
+    print(newsResponse.articles);
+    this.byCategory.clear();
     this.byCategory.addAll(newsResponse.articles!);
     print(byCategory.length);
     isLoading = false;
     notifyListeners();
+    return newsResponse.articles;
   }
 
 

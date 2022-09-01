@@ -18,7 +18,7 @@ class _Tab2ScreenState extends State<Tab2Screen> with AutomaticKeepAliveClientMi
   @override
   Widget build(BuildContext context) {
     final newsService = Provider.of<NewsService>(context);
-    newsService.getNewsByCategory(newsService.categoryElection as String);
+    //newsService.getNewsByCategory(newsService.categoryElection.toString());
     return Scaffold(
       backgroundColor: Colors.grey[900],
       body: Column(
@@ -63,10 +63,12 @@ class _Categories extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index){
           return GestureDetector(
-            onTap: (){
+            onTap: () async {
+              String category = categories[index].name.toString();
               final newsService = Provider.of<NewsService>(context, listen: false);
               newsService.categoryElection = categories[index].name;
-              newsService.getNewsByCategory(categories[index].name);
+              var articles = await newsService.getNewsByCategory(category);
+              (articles.length == 0)? newsService.byCategory = [Article(title: 'No news for this category', description: 'Nothing to show')]: null;
             },
             child: Card(
               elevation: 15,
