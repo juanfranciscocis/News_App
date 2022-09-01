@@ -15,16 +15,11 @@ You can take a look at some images here:
 #### iOS app Dark Theme
 
 <p float="left">
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/1.PNG"width="300"/>
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/2.PNG"width="300"/>
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/3.PNG"width="300"/>
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/4.PNG"width="300"/>
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/5.PNG"width="300"/>
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/6.PNG"width="300"/>
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/7.PNG"width="300"/>
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/8.PNG"width="300"/>
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/9.PNG"width="300"/>
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/10.PNG"width="300"/>
-  <img src="https://github.com/juanfranciscocis/QR_Reader/blob/8c5f2d0d1cab7994274fa5c3706c65a15a2b09bb/README%20IMAGES/DARK%20IMAGES/11.PNG"width="300"/>
+  <img src="https://github.com/juanfranciscocis/News_App/blob/8ae7147acebc621f0ada072b7b10af222b3fa388/README%20FILES/1.png"width="300"/>
+  <img src="https://github.com/juanfranciscocis/News_App/blob/8ae7147acebc621f0ada072b7b10af222b3fa388/README%20FILES/2.png"width="300"/>
+  <img src="https://github.com/juanfranciscocis/News_App/blob/8ae7147acebc621f0ada072b7b10af222b3fa388/README%20FILES/3.png"width="300"/>
+  <img src="https://github.com/juanfranciscocis/News_App/blob/8ae7147acebc621f0ada072b7b10af222b3fa388/README%20FILES/4.png"width="300"/>
+  <img src="https://github.com/juanfranciscocis/News_App/blob/8ae7147acebc621f0ada072b7b10af222b3fa388/README%20FILES/5.png"width="300"/>
+  
 </p>
 
